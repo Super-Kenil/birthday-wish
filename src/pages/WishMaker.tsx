@@ -9,7 +9,7 @@ export const WishMaker = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    navigator.clipboard.writeText(`${window.location.href}w?n=${inputValue}`).then(() => {
+    navigator.clipboard.writeText(`${window.location.href}#/w?n=${inputValue}`).then(() => {
       navigate(`/w?n=${inputValue}`)
     }, (err) => {
       alert(err)
