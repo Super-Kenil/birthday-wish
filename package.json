@@ -1,6 +1,7 @@
 {
-  "name": "birthday--wish",
+  "name": "birthday-wish",
   "private": true,
+  "homepage": "https://birthday-wish.superkenil.com/",
   "version": "1.0.0",
   "type": "module",
   "author": {
