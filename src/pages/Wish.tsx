@@ -13,20 +13,19 @@ export const Wish = () => {
   }, [])
 
   return (
-      <main className="flex items-center justify-center min-h-screen">
-        <div>
-          <h1 className="sm:text-7xl text-4xl tracking-wide font-masterscript text-center max-sm:leading-normal sm:mb-12 mb-2">Happy Birthday
+      <main className="min-h-dvh">
+          <h1 className="sm:text-7xl text-4xl tracking-wide font-masterscript text-center max-sm:leading-normal sm:mb-2 mb-2 pt-12">Happy Birthday
             <br />
             <span className="capitalize leading-loose text-red-600 font-semibold">
-            {personName}
+              {personName}
             </span>
           </h1>
           {window.location.hostname === 'localhost' ? (
-              <div className="h-[70vh] w-screen rounded-lg bg-pink-100 mx-auto bottom-0" />
+            <div className="h-[70dvh] w-screen rounded-lg bg-pink-100 mx-auto bottom-0" />
           ) : (
-              <iframe src="https://bdaycake.com/kenil_1662" className="h-[70vh] w-screen rounded-lg mx-auto" />
+            <iframe src="https://bdaycake.com/kenil_1662" className="h-[70dvh] w-screen rounded-lg mx-auto" />
           )}
-        </div>
+        <p className='fixed bottom-0 w-full text-nowrap flex justify-center'>Powered by&nbsp; <a href="https://bdaycake.com/" target='_blank' className='text-red-500 underline'>bdaycake.com</a></p>
       </main>
   )
 }
